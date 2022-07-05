@@ -1,0 +1,15 @@
+{
+    "name": "mrxui/framework",
+    "description": "my project",
+    "require": {
+    },
+    "authors": [
+        {
+            "name": "Rancevich Rostislav",
+            "email": "r@mail.ru"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "7"
+    }
+}

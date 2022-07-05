@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.item{
+    
+    border: 2px rgb(238, 238, 238) solid;
+    width: 700px;
+    height: 200px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content__wrapper{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.content__news__wrapper{
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+.news_card_content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(227, 180, 180);
+    box-sizing: border-box;
+    max-width: 1440px;
+    padding: 0 20px 0 20px;
+    
+}
+
+.footer{
+    margin: 0 auto;
+    background-color: rgb(214, 145, 145);
+    max-width: 1440px;
+}
+
+.info__btn{
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.info__btn:hover{
+    background-color: #1f65a7; 
+    transition: 0.6s linear; 
+}
+
+.del__btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: brown;
+    margin-left: 10px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.del__btn:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+nav > ul{
+    display: flex;
+    list-style:none;
+}
+nav> ul > li{
+    margin-left:20px;
+}
+nav> ul > li > a:hover{
+  border-bottom:1px black solid;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(6, 3, 9);
+}
+
+.text_content{
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+.newsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  margin:40px auto 40px auto;
+  border: 1px solid grey;
+  padding: 5px;
+  
+}
+
+.newsContainer >img{
+  max-width: 400px;
+}
+
+.search_form{
+  display: block;
+  margin-left:580px;
+}
+
+.home___buttons{
+  margin-top: 80px;
+}
+
+.export__container{
+  margin-top: 30px;
+}
+
+.new__form{
+  padding: 5px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: 150px;
+  justify-content: space-between;
+  border: black solid 2px;
+}
+
+.new_wrapper{
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  
+}
+
